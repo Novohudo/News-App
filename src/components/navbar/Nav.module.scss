@@ -1,0 +1,33 @@
+
+.nav{
+  display: flex;
+  justify-content: center;
+  height:3em;
+  padding: 5px;
+  background-color: #97cbff;
+
+  .nav_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 5px;
+  }
+  .active{
+    color:red;
+  }
+  a{
+    font-size: 1em;
+    font-size: clamp(12px, 1.5vw, 18px);
+    letter-spacing: 1px;
+    line-height: 1;
+    text-decoration: none;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 5px;
+    text-transform: uppercase;
+    transition-duration: 1s;
+  }
+  a:hover{
+    color: white;
+  }
+}

@@ -1,0 +1,13 @@
+.countries_container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .country_item{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid red;
+    padding-left: 5px;
+    margin: 5px;
+    cursor: pointer;
+  }
+}

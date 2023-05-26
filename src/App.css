@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.App_container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: antiquewhite;
+}
+

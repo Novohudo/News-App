@@ -1,0 +1,25 @@
+.sources_container{
+  display: flex;
+  flex-direction: column;
+
+  .sources_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .source_item{
+    display: flex;
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+
+    img{
+      width: 100%;
+      transition-duration: 0.5s;
+    }
+    img:hover{
+      width: 120%;
+    }
+  }
+
+}

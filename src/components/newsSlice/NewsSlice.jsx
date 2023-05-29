@@ -1,14 +1,11 @@
 import React from 'react';
 import s from "./NewsSlice.module.scss";
 import image from "../../img/paper.jpg"
-import NewsAPI from "../../API/NewsAPI";
-import {useDispatch, useSelector} from "react-redux";
-import {actions} from "../../store/favorites.slice";
+import NewsAPI from "../../api/NewsAPI";
+import {useActions} from "../../hooks/useActions";
 
 const NewsSlice = ({selectedCountry, selectedCategory}) => {
-	const {favorites} = useSelector(state => state);
-	const dispatch = useDispatch();
-	console.log(favorites)
+	const {toggleFavorites} = useActions();
 
 	const renderComponent = (news) => {
 		return (
@@ -20,7 +17,7 @@ const NewsSlice = ({selectedCountry, selectedCategory}) => {
 							<h6>{item.description}</h6>
 							{item.urlToImage ? <img src={item.urlToImage} alt={"image"}/> : <img src={image} alt={"..."}/>}
 							<a href={item.url} target={"_blank"}>more</a>
-							<button onClick={()=> dispatch(actions.toggleFavorites(item))}>add to favorites</button>
+							<button onClick={()=> toggleFavorites(item)}>add to favorites</button>
 						</div>
 					</div>
 				))}

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from "../newsSlice/NewsSlice.module.scss";
 import image from "../../img/paper.jpg";
-import SourcesNewsAPI from "../../API/SourcesNewsAPI";
+import SourcesNewsAPI from "../../api/SourcesNewsAPI";
 
 const SourcesNews = ({sources}) => {
 	const renderNews = (sourcesNews) => {

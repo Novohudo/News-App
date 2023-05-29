@@ -1,0 +1,13 @@
+.counter{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 10px;
+
+}
+.counter > span{
+      background-color: #00ff6b;
+      padding: 1px;
+      border-radius: 5px;
+      margin-left: -5px;
+}

@@ -1,0 +1,30 @@
+.countries_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+
+.country_container {
+  border-radius: 10px;
+  margin-left: 25px;
+  padding: 5px;
+
+  .country_item {
+    border-radius: 10px;
+    box-shadow: 1px 2px 17px black;
+    transition-duration: 0.5s;
+    height: 60px;
+    &.active{
+      box-shadow: 1px 2px 17px red;
+    }
+  }
+
+  &:hover {
+    .country_item {
+      box-shadow: 1px 2px 17px red;
+    }
+  }
+}
+
+

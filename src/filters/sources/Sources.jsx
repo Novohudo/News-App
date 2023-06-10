@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./Sources.module.scss";
-import {sources} from "./filters";
+import {sources} from "../filters";
 
 const Sources = ({setSources}) => {
 	return (
@@ -8,7 +8,7 @@ const Sources = ({setSources}) => {
 			<h3>Top Sources</h3>
 			<div className={s.sources_row}>
 				{sources.map((item) => (
-					<span className={s.source_item} onClick={() => setSources(item.name)}><img src={item.img} alt={"..."}/></span>
+					<span className={s.source_item} onClick={() => setSources(item.name)}><img src={item.img} alt={"..."} key={item.id}/></span>
 				))}
 			</div>
 		</div>

@@ -1,33 +1,44 @@
 
-.nav{
+.nav {
   display: flex;
-  justify-content: center;
-  height:3em;
-  padding: 5px;
+  justify-content: left;
+  align-items: center;
+  height: 5em;
   background-color: #97cbff;
+  box-shadow: 2px 2px 2px black;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
-  .nav_container{
+  .nav_container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 5px;
   }
-  .active{
-    color:red;
+
+  .active {
+    color: #ff0707;
+    text-shadow: 2px 2px 4px red;
   }
-  a{
-    font-size: 1em;
-    font-size: clamp(12px, 1.5vw, 18px);
-    letter-spacing: 1px;
-    line-height: 1;
+
+  a {
+    font-size: clamp(12px, 1.5vw, 22px);
+    letter-spacing: 2px;
+    line-height: 1.5;
     text-decoration: none;
-    border: 1px solid red;
     padding: 10px;
-    margin: 5px;
-    text-transform: uppercase;
-    transition-duration: 1s;
+
+    transition-duration: 0.5s;
+    &::before,
+    &:after {
+      content: '|';
+      margin: 5px 5px;
+    }
   }
-  a:hover{
-    color: white;
+
+  a:hover {
+    text-shadow: 2px 2px 4px red;
   }
 }

@@ -14,6 +14,7 @@ const Nav = () => {
 				<NavLink to="/favorites" className={({isActive}) => (isActive ? s.active : "")}>Favorites ({favorites.length === 0 ? '' : favorites.length})</NavLink>
 				<NavLink to="/about" className={({isActive}) => (isActive ? s.active : "")}>About</NavLink>
 			</div>
+			<p className={s.logo}> G.O.O.D - NEWS<a href={'https://github.com/Novohudo'} target={"_blank"}/></p>
 		</nav>
 	);
 };

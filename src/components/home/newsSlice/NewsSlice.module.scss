@@ -3,6 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: rgba(255, 215, 0, 0.1);
 
   .news_block{
     display: flex;
@@ -20,6 +21,7 @@
     background-color: rgba(255, 255, 0, 0.11);
 
     p{
+      font-size: 20px;
       font-family: sans-serif;
       color: white;
       letter-spacing: 1px;

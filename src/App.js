@@ -1,7 +1,7 @@
 import './App.css';
 import Nav from "./components/navbar/Nav";
 import {Outlet, Route, Routes} from "react-router-dom";
-import TopSources from "./components/topSources/TopSources";
+import SourcesContainer from "./components/topSources/SourcesContainer";
 import Favorites from "./components/favorite/Favorites";
 import About from "./components/about/About";
 import React from "react";
@@ -16,7 +16,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Outlet />}>
 						<Route path="" element={<Home/>} />
-						<Route path="topSources" element={<TopSources/>}/>
+						<Route path="topSources" element={<SourcesContainer/>}/>
 						<Route path="favorites" element={<Favorites/>}/>
 						<Route path="about" element={<About/>}/>
 					</Route>

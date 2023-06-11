@@ -4,12 +4,12 @@
   justify-content: left;
   align-items: center;
   height: 5em;
-  background-color: #97cbff;
-  box-shadow: 2px 2px 2px black;
+  background-color: rgba(79, 79, 1, 0.61);
   position: sticky;
   top: 0;
   left: 0;
   z-index: 1;
+  backdrop-filter: blur(5px);
 
   .nav_container {
     display: flex;
@@ -19,26 +19,32 @@
   }
 
   .active {
-    color: #ff0707;
-    text-shadow: 2px 2px 4px red;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #ffffff;
   }
 
   a {
     font-size: clamp(12px, 1.5vw, 22px);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.5;
     text-decoration: none;
+    margin-left: 2em;
     padding: 10px;
-
     transition-duration: 0.5s;
-    &::before,
-    &:after {
-      content: '|';
-      margin: 5px 5px;
-    }
+
   }
 
   a:hover {
-    text-shadow: 2px 2px 4px red;
+    text-shadow: 2px 2px 4px #ffffff;
+  }
+  .logo{
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Droid Sans Mono Slashed",sans-serif;
+    position: absolute;
+    font-weight: bold;
+    left: 94%;
+    top: -1em;
   }
 }

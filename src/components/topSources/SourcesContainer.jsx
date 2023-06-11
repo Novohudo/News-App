@@ -4,10 +4,10 @@ import SourcesNews from "./sourcesNews/SourcesNews";
 import Sources from "../../filters/sources/Sources";
 import {useGetSourcesNewsQuery} from "../../store/api/sources.api";
 
-const TopSources = () => {
+const SourcesContainer = () => {
 	const [sources, setSources] = useState('');
 	const {data,isLoading} = useGetSourcesNewsQuery({sources})
-	console.log(data)
+
 	return (
 		<div className={s.main}>
 			<div className={s.container}>
@@ -26,4 +26,4 @@ const TopSources = () => {
 	);
 };
 
-export default TopSources;
+export default SourcesContainer;

@@ -4,7 +4,7 @@ import image from "../../../img/paper.jpg"
 import {useGetNewsQuery} from "../../../store/api/NewsAPI";
 import {useActions} from "../../../hooks/useActions";
 
-const NewsSlice = ({selectedCountry, selectedCategory}) => {
+const NewsSlice = ({selectedCountry, selectedCategory,toggleFavorites,data}) => {
 	const {toggleFavorites} = useActions();
 	const {data,isLoading} = useGetNewsQuery({selectedCountry, selectedCategory});
 

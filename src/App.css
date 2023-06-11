@@ -4,6 +4,7 @@
   text-align: center;
   height: 100%;
   width: 100%;
+  background-color: antiquewhite;
 }
 .App_container{
   display: flex;
@@ -27,6 +28,17 @@ button{
 button:hover{
   background-color: rgba(0, 0, 0, 0.11);
 }
-
-
+h3{
+  letter-spacing: 2px;
+  font-family: "Calibri Light" , sans-serif;
+  position: sticky;
+  left: 0;
+  top: 4em;
+  margin: 0;
+  padding: 15px;
+  background-color: rgb(199, 180, 104);
+}
+span{
+  color: #f8f9ff;
+}
 

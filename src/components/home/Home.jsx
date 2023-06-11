@@ -13,11 +13,14 @@ const Home = () => {
 			<div className={s.container}>
 				<div className={s.filters_container}>
 					<div className={s.filters}>
+						<details>
+							<summary>News fromm.. </summary>
 							<Countries selectedCountry={selectedCountry} setSelectedCountry={setSelectedCountry}/>
+						</details>
 							<Categories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
 					</div>
 				</div>
-				<h3>News fromm {selectedCountry.name} in category {selectedCategory}</h3>
+				<h3>News fromm <span>{selectedCountry.name}</span> in category <span>{selectedCategory}</span></h3>
 				<div className={s.news_container}>
 					<NewsSlice selectedCategory={selectedCategory} selectedCountry={selectedCountry}/>
 				</div>

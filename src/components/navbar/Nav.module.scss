@@ -8,7 +8,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   backdrop-filter: blur(5px);
 
   .nav_container {
@@ -31,20 +31,11 @@
     margin-left: 2em;
     padding: 10px;
     transition-duration: 0.5s;
-
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   a:hover {
     text-shadow: 2px 2px 4px #ffffff;
   }
-  .logo{
-    font-size: 12px;
-    text-align: center;
-    font-style: italic;
-    font-family: "Droid Sans Mono Slashed",sans-serif;
-    position: absolute;
-    font-weight: bold;
-    left: 94%;
-    top: -1em;
-  }
+
 }

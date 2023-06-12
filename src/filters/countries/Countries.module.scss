@@ -1,24 +1,23 @@
 .countries_container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: left;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin: 15px;
-
+  width: 40%;
+  margin: 5px;
 }
 
 .country_container {
   border-radius: 10px;
-  margin-left: 25px;
+  margin-left: 10px;
   padding: 5px;
-
-
+  border: 1px solid rgba(0, 0, 0, 0.18);
 
   .country_item {
     border-radius: 10px;
     box-shadow: 1px 2px 17px black;
     transition-duration: 0.5s;
-    height: 60px;
+    height: 30px;
     &.active{
       box-shadow: 1px 2px 17px rgb(255, 247, 64);
     }

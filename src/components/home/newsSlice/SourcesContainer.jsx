@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
-import s from "../home/Home.module.scss";
-import SourcesNews from "./sourcesNews/SourcesNews";
-import Sources from "../../filters/sources/Sources";
-import {useGetSourcesNewsQuery} from "../../store/api/sources.api";
+import s from "../Home.module.scss";
+import Sources from "../sources/Sources";
+import {useGetSourcesNewsQuery} from "../../../store/api/sources.api";
+import NewsSlice from "./NewsSlice";
+import {useActions} from "../../../hooks/useActions";
 
 const SourcesContainer = () => {
+	const {toggleFavorites} = useActions();
 	const [sources, setSources] = useState('');
 	const {data,isLoading} = useGetSourcesNewsQuery({sources})
 
@@ -16,11 +18,8 @@ const SourcesContainer = () => {
 						<Sources setSources={setSources}/>
 					</div>
 				</div>
-				<hr/>
-				{sources ? <p>{sources}</p> : <h2>choose source</h2>}
-				<div className={s.news_container}>
-				<SourcesNews data={data} isLoading={isLoading}/>
-				</div>
+				{sources ? <p className={s.source}>{sources}</p> : <h2>choose source</h2>}
+				<NewsSlice toggleFavorites={toggleFavorites} data={data} isLoading={isLoading}/>
 			</div>
 		</div>
 	);

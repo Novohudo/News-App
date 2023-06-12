@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./Sources.module.scss";
-import {sources} from "../filters";
+import {sources} from "../../../filters/filters";
 
 const Sources = ({setSources}) => {
 	return (

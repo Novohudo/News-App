@@ -1,7 +1,7 @@
 import './App.css';
 import Nav from "./components/navbar/Nav";
 import {Outlet, Route, Routes} from "react-router-dom";
-import SourcesContainer from "./components/topSources/SourcesContainer";
+import SourcesContainer from "./components/home/newsSlice/SourcesContainer";
 import Favorites from "./components/favorite/Favorites";
 import About from "./components/about/About";
 import React from "react";

@@ -1,6 +1,8 @@
 .sources_container{
   display: flex;
   flex-direction: column;
+  width: 100%;
+
 
   .sources_row{
     display: flex;
@@ -21,5 +23,7 @@
       width: 120%;
     }
   }
-
+  h3{
+    //width: 100%;
+  }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
-  margin-top: 35px;
+  width: 40%;
 
   .category_item {
     font-weight: normal;
@@ -12,9 +12,11 @@
     position: relative;
     color: rgba(0, 0, 0, 0.66);
     cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.18);
     &:hover{
       color: #ffffff;
       text-shadow: 1px 1px 5px #ffffff;
+      background-color: #918B55;
     }
     &::after {
       content: "";

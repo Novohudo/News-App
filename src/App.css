@@ -11,7 +11,7 @@
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #f8f9ff;
+  background-color: #FAF3CE;
 }
 a{
   text-decoration: none;
@@ -37,6 +37,7 @@ h3{
   margin: 0;
   padding: 15px;
   background-color: rgb(199, 180, 104);
+
 }
 span{
   color: #f8f9ff;

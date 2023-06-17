@@ -11,7 +11,7 @@ const Favorites = () => {
 			{favorites.map((item) => (
 				<div>
 					<h2>{item.title}</h2>
-					<img src={item.urlToImage}/>
+					<img src={item.urlToImage} alt={'img'}/>
 					<button onClick={() => deleteFromFavorites(item.id)}>Delete</button>
 				</div>
 			))}

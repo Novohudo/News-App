@@ -4,7 +4,23 @@
   background-color: rgba(255, 193, 0, 0.11);
 
   .container {
+    margin: 5px;
     .filters {
+      display: flex;
+      flex-wrap: wrap;
+      //margin: 5px;
+      .filters_container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 40%;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+
+      }
+      .exchange_container{
+        width: 20%;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+      }
     }
   }
 }

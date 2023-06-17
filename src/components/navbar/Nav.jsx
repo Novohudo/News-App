@@ -11,7 +11,7 @@ const Nav = () => {
 			<div className={s.nav_container}>
 				<NavLink to="" className={({isActive})=>(isActive ? s.active : "")}>Home</NavLink>
 				<NavLink to="/topSources" className={({isActive}) => (isActive ? s.active : "")}>Top</NavLink>
-				<NavLink to="/favorites" className={({isActive}) => (isActive ? s.active : "")}>Favorites ({favorites.length === 0 ? '' : favorites.length})</NavLink>
+				<NavLink to="/favorites" className={({isActive}) => (isActive ? s.active : "")}>Favorites {favorites.length === 0 ? '' : favorites.length}</NavLink>
 				<NavLink to="/about" className={({isActive}) => (isActive ? s.active : "")}>About</NavLink>
 			</div>
 		</nav>

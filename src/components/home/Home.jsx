@@ -4,7 +4,8 @@ import NewsSlice from "./newsSlice/NewsSlice";
 import Categories from "../../filters/categories/Categories";
 import Countries from "../../filters/countries/Countries";
 import NewsContainer from "./newsSlice/NewsContainer";
-import ExchangeComponent from "../exchange/ExchangeComponent";
+import ExchangeComponent from "../miniApps/exchange/ExchangeComponent";
+import WeatherContainer from "../miniApps/weather/WeatherContainer";
 
 const Home = () => {
 	const [selectedCountry, setSelectedCountry] = useState({code: 'ua', name: 'Ukraine'});
@@ -20,6 +21,9 @@ const Home = () => {
 						</div>
 						<div className={s.exchange_container}>
 							<ExchangeComponent/>
+						</div>
+						<div className={s.weather_container}>
+							<WeatherContainer/>
 						</div>
 					</div>
 				<h3>News fromm <span>{selectedCountry.name}</span> in category <span>{selectedCategory}</span></h3>

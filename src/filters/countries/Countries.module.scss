@@ -1,6 +1,6 @@
 .countries_container {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 5px;
@@ -8,7 +8,7 @@
 
 .country_container {
   border-radius: 10px;
-  margin-left: 10px;
+  margin: 2px;
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.18);
 
@@ -16,7 +16,7 @@
     border-radius: 10px;
     box-shadow: 1px 2px 17px black;
     transition-duration: 0.5s;
-    height: 30px;
+    height: 2em;
     &.active{
       box-shadow: 1px 2px 17px rgb(255, 247, 64);
     }

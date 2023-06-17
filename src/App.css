@@ -36,7 +36,8 @@ h3{
   top: 4em;
   margin: 0;
   padding: 15px;
-  background-color: rgb(199, 180, 104);
+  background-color: rgba(86, 71, 0, 0.38);
+  backdrop-filter: blur(15px);
 
 }
 span{

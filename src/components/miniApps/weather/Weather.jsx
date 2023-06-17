@@ -16,7 +16,7 @@ export const Weather = ({weatherData}) => (
 			<p className={s.sunrise_sunset}>Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('pl-IN')}</p>
 		</div>
 		<p className={s.description}>
-			{weatherData.weather[0].main}
+			{weatherData.weather[0].description}
 			<img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`} alt="Weather Icon" />
 		</p>
 

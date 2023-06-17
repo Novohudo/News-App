@@ -8,7 +8,7 @@ import ExchangeComponent from "../miniApps/exchange/ExchangeComponent";
 import WeatherContainer from "../miniApps/weather/WeatherContainer";
 
 const Home = () => {
-	const [selectedCountry, setSelectedCountry] = useState({code: 'ua', name: 'Ukraine'});
+	const [selectedCountry, setSelectedCountry] = useState({code: 'us', name: 'United States'});
 	const [selectedCategory, setSelectedCategory] = useState('');
 
 	return (
@@ -26,7 +26,7 @@ const Home = () => {
 							<WeatherContainer/>
 						</div>
 					</div>
-				<h3>News fromm <span>{selectedCountry.name}</span> in category <span>{selectedCategory}</span></h3>
+				<h3>News from <span>{selectedCountry.name}</span> in category <span>{selectedCategory}</span></h3>
 				<div className={s.news_container}>
 					<NewsContainer selectedCategory={selectedCategory} selectedCountry={selectedCountry}/>
 				</div>

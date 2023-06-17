@@ -10,21 +10,22 @@
   border-radius: 10px;
   margin: 2px;
   padding: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  //border: 1px solid rgba(0, 0, 0, 0.18);
 
   .country_item {
     border-radius: 10px;
-    box-shadow: 1px 2px 17px black;
+    box-shadow: 1px 2px 10px black;
     transition-duration: 0.5s;
     height: 2em;
     &.active{
-      box-shadow: 1px 2px 17px rgb(255, 247, 64);
+      box-shadow: 1px 2px 10px rgb(255, 7, 7);
     }
   }
 
   &:hover {
     .country_item {
-      box-shadow: 2px 2px 17px #ffffff;
+      box-shadow: 1px 2px 10px rgb(255, 7, 7);
     }
   }
 }

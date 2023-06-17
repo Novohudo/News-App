@@ -12,12 +12,13 @@
     position: relative;
     color: rgba(0, 0, 0, 0.66);
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-    &:hover{
+
+    &:hover {
       color: #ffffff;
       text-shadow: 1px 1px 5px #ffffff;
-      background-color: #918B55;
+      background-color: rgba(145, 139, 85, 0.51);
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -30,13 +31,17 @@
       transition: transform 0.3s ease;
       box-shadow: 2px 2px 4px red;
     }
-    &.active{
+
+    &.active {
       color: #ffffff;
       text-shadow: 1px 1px 5px #ffffff;
+      background-color: rgba(145, 139, 85, 0.51);
     }
-    &.active::after{
+
+    &.active::after {
       transform: scaleX(1);
     }
+
     &:hover::after {
       transform: scaleX(1);
     }

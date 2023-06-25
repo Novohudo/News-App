@@ -19,7 +19,6 @@ const WeatherContainer = () => {
 		};
 		fetchData();
 	}, [lat, long]);
-	console.log(data)
 
 	useEffect(() => {
 		navigator.geolocation.getCurrentPosition(function (position) {
